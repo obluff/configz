@@ -4,9 +4,6 @@
 ** [ ] Sound
 *** CMD
 sudo pacman -S pavucontrol pulseaudio
-** [ ] Background
-*** CMD
-sudo pacman -S wal
 ** [ ] MONITORS
 *** PROCESS
 Set up arandr configuration
@@ -57,6 +54,7 @@ python3.8 -m pip install jupyter jupyterlab pandas mypy numpy
 ** [ ] Background
 *** CMD
 pip install pywal
+sudo pacman -S feh
 ** [ ] MYSQL Command Line Tool
 *** CMD
 yay -S mycli
@@ -65,4 +63,12 @@ yay -S mycli
 sudo pacman -S docker
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
+** [ ] Screenshot
+*** CMD
+sudo pacman -S flameshot
+** [ ] Update Sudoers
+*** PROCESS
+sudo su - root
+visudo
 
+obluff ALL=(ALL) NOPASSWD:ALL

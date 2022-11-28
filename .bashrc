@@ -146,7 +146,6 @@ if [ -f '/home/obluff/google-cloud-sdk/completion.bash.inc' ]; then . '/home/obl
 ### LOCAL STUFF
 
 export SETUPDIR=$HOME/setup
-source $SETUPDIR/.localrc
 source $SETUPDIR/.work_aliases
 source $SETUPDIR/.local_aliases
 source $SETUPDIR/.work_vars

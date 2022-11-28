@@ -1,0 +1,60 @@
+#+title: Setup Checklist
+
+* Personal
+** [ ] Sound
+*** CMD
+sudo pacman -S pavucontrol pulseaudio
+** [ ] MONITORS
+*** PROCESS
+Set up arandr configuration
+** [ ] GIT
+*** CMD
+sudo pacman -S git
+git config --global user.email "ianwrightaw@gmail.com"
+git config --global user.name "Ian Wright"
+*** PROCESS
+Set up ssh keys
+** [ ] Tools
+*** CMD
+sudo pacman -S ripgrep fd tldr
+** [ ] Browsers
+*** CMD
+sudo pacman -S firefox chromium
+*** PROCESS
+update i3 config file
+update ~/.config/memeapps.list
+*** PROCESS
+install vimium
+install timeblocker
+*** PROCESS
+set browser.fullscreen.autohide -> False
+** [ ] Text editors
+*** CMD
+sudo pacman -S emacs code intellij-idea-community-edition
+git clone --depth 1 https://github.com/doomemacs/doomemacs ~/.emacs.d
+~/.emacs.d/bin/doom install
+*** PROCESS
+SET UP DOT FILES
+** [ ] Terminal emulator
+*** CMD
+sudo pacman -S kitty
+*** PROCESS
+update i3 config file
+bindsym $mod+Return exec kitty
+** [ ] Languages
+*** CMD
+sudo pacman -S scala sbt ammonite
+*** CMD
+yay -S python39 python38
+** [ ] Python DE
+*** CMD
+python3.8 -m pip install jupyter jupyterlab pandas mypy numpy
+** [ ] MYSQL Command Line Tool
+*** CMD
+yay -S mycli
+** [ ] Docker
+*** CMD
+sudo pacman -S docker
+sudo systemctl start docker.service
+sudo systemctl enable docker.service
+

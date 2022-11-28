@@ -152,6 +152,7 @@ source $SETUPDIR/.local_aliases
 source $SETUPDIR/.work_vars
 source $SETUPDIR/.local_vars
 export PATH=$HOME/setup/bin:$PATH
+set -o vi
 eval "$(jump shell)"
 
 alias config='git --git-dir $HOME/.cfg/ --work-tree $HOME'

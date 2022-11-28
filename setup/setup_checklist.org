@@ -17,6 +17,11 @@ Set up ssh keys
 ** [ ] Tools
 *** CMD
 sudo pacman -S ripgrep fd tldr fzf
+*** CMD
+sudo snap install j
+*** PROCESS
+add 
+eval "$(jump shell)" to bashrc 
 ** [ ] Browsers
 *** CMD
 sudo pacman -S firefox chromium
@@ -63,6 +68,8 @@ yay -S mycli
 sudo pacman -S docker
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
 ** [ ] Screenshot
 *** CMD
 sudo pacman -S flameshot

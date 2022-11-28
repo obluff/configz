@@ -1,0 +1,10 @@
+if [ -z $1 ]
+then
+    DEPTH=10
+else
+    DEPTH=$1
+fi
+echo $DEPTH
+cd $(find . -maxdepth $DEPTH -type d -print | fzf)
+# enter the shell of the child process in the new dir :) 
+$SHELL

@@ -1,0 +1,17 @@
+source $HOME/setup/.local_vars
+
+# GIT TRIX
+alias cb='git checkout $(git branch --sort=-committerdate | fzf)'
+alias cbr='git checkout --track $(git branch -a | fzf)'
+
+# FUN!
+alias setclip="xclip -selection c"
+alias getclip="xclip -selection c -o"
+
+# DEFAUL TPAHT OVERRIDES
+alias vim="nvim"
+alias python='$DEFAULT_PYTHON_VERSION'
+alias pip='${DEFAULT_PYTHON_VERSION} -m pip'
+
+# JUST FOR ME :-)
+alias orgu="cd $HOME/.org/organice && git add . && git commit -m 'manual commit' && git push"

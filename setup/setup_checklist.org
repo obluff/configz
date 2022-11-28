@@ -4,6 +4,9 @@
 ** [ ] Sound
 *** CMD
 sudo pacman -S pavucontrol pulseaudio
+** [ ] Background
+*** CMD
+sudo pacman -S wal
 ** [ ] MONITORS
 *** PROCESS
 Set up arandr configuration
@@ -16,7 +19,7 @@ git config --global user.name "Ian Wright"
 Set up ssh keys
 ** [ ] Tools
 *** CMD
-sudo pacman -S ripgrep fd tldr
+sudo pacman -S ripgrep fd tldr fzf
 ** [ ] Browsers
 *** CMD
 sudo pacman -S firefox chromium
@@ -46,9 +49,14 @@ bindsym $mod+Return exec kitty
 sudo pacman -S scala sbt ammonite
 *** CMD
 yay -S python39 python38
-** [ ] Python DE
+python3.8 -m ensurepip
+python3.9 -m ensurepip
+** [ ] Python
 *** CMD
 python3.8 -m pip install jupyter jupyterlab pandas mypy numpy
+** [ ] Background
+*** CMD
+pip install pywal
 ** [ ] MYSQL Command Line Tool
 *** CMD
 yay -S mycli

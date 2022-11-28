@@ -137,15 +137,21 @@ ex ()
 }
 
 
-### LOCAL STUFF
-
-export IANSETUP=/home/obluff/setup
-source $IANSETUP/.localrc
-alias config='git --git-dir $HOME/.cfg/ --work-tree $HOME'
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/obluff/google-cloud-sdk/path.bash.inc' ]; then . '/home/obluff/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/obluff/google-cloud-sdk/completion.bash.inc' ]; then . '/home/obluff/google-cloud-sdk/completion.bash.inc'; fi
 
+### LOCAL STUFF
 
+export SETUPDIR=$HOME/setup
+source $SETUPDIR/.localrc
+source $SETUPDIR/.work_aliases
+source $SETUPDIR/.local_aliases
+source $SETUPDIR/.work_vars
+source $SETUPDIR/.local_vars
+export PATH=$HOME/setup/bin:$PATH
+
+alias config='git --git-dir $HOME/.cfg/ --work-tree $HOME'
+cat ~/.cache/wal/sequences

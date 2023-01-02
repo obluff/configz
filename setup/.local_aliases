@@ -14,4 +14,10 @@ alias python='$DEFAULT_PYTHON_VERSION'
 alias pip='${DEFAULT_PYTHON_VERSION} -m pip'
 
 # JUST FOR ME :-)
-alias orgu="cd $HOME/.org/organice && git add . && git commit -m 'manual commit' && git push"
+alias orgu="cd $HOME/org/organice && git add . && git commit -m 'manual commit' && git push"
+
+# bad
+alias sqfind="rg -o 'FROM|JOIN ([\w|\.]+)' | tr '[:upper:]' '[:lower:]' | sed -r 's/.*:(from|join)//' | sort | uniq -c | sort -n"
+
+# k
+alias k="kubectl"

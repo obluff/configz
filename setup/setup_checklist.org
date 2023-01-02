@@ -53,6 +53,8 @@ sudo pacman -S scala sbt ammonite
 yay -S python39 python38
 python3.8 -m ensurepip
 python3.9 -m ensurepip
+*** CMD
+sudo pacman -S nodejs npm
 ** [ ] Python
 *** CMD
 python3.8 -m pip install jupyter jupyterlab pandas mypy numpy

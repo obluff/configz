@@ -1,0 +1,5 @@
+read TFILE
+FILEPATH=/var/tmp/$TFILE.ipynb
+cp $HOME/setup/resources/template.ipynb $FILEPATH
+echo "created $FILEPATH"
+jupyter lab $FILEPATH

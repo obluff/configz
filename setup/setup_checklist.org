@@ -1,7 +1,8 @@
 #+title: Setup Checklist
 
 * Personal
-** [ ] Sound
+*~/.emacs.d/bin/doom install
+* [ ] Sound
 *** CMD
 sudo pacman -S pavucontrol pulseaudio
 ** [ ] MONITORS
@@ -50,9 +51,7 @@ bindsym $mod+Return exec kitty
 *** CMD
 sudo pacman -S scala sbt ammonite
 *** CMD
-yay -S python39 python38
-python3.8 -m ensurepip
-python3.9 -m ensurepip
+curl https://pyenv.run | bash
 *** CMD
 sudo pacman -S nodejs npm
 ** [ ] Python

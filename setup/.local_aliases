@@ -18,4 +18,4 @@ alias sqfind="rg -o 'FROM|JOIN ([\w|\.]+)' | tr '[:upper:]' '[:lower:]' | sed -r
 alias k="kubectl"
 
 # nav to repos
-alias cdfzf='cd "$(ls -d /home/obluff/c/* | fzf)"'
+alias c='cd "$(ls -d /home/obluff/c/* | fzf)"'
